@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#respnav {
+    display: none;
+}
+
+.tabUl li {
+    background-color: #fff;
+    color: #212121;
+}
+.tabUl li:focus  {
+    background-color: #212121;
+    color: #fff;
+}
+
+/* Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } */
+
+/* Mobile S : 320px  */
+/* Mobile M : 375px */
+/* Mobile L : 425px */
+/* Tablet : 768px */
+/* Laptop : 1024px */
+/* Laptop L : 1440px */
+/* 4K L : 2560px */
+
+/* Tablet
+@media screen and (max-width: 768px) {
+    #sectionOneImg {
+        display: none;
+    }
+
+    #sectionOneLeftName button {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #sectionTwoImg {
+        width: 100%;
+    }
+
+    #sectionTwo {
+        margin-top: 40px;
+    }
+
+    #thirdSection {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: fit-content;
+        justify-content: center;
+        border: 1px solid red;
+    }
+    #thirdSection div:first-child {
+        display: none;
+    }
+    #thirdSection div:nth-child(2) {
+        border: 1px solid blue;
+        width: 100%;
+    }
+
+}
+
+Mobile L
+@media screen and (max-width: 425px) {
+    #sectionOneLeftName {
+        font-size: 50px;
+    }
+
+    #sectionTwo {
+        display: block;
+    }
+} 
+*/

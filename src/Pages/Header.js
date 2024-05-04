@@ -27,7 +27,9 @@ const Header = () => {
                 </ul>
                 
             </nav>
-            <ul id="respnav" className="max-md:w-full absolute z-[11] bg-[#212121] text-[#fff] text-[30px] z-0 right-0 h-screen w-1/4 flex flex-col justify-center px-[25px]">
+            <ul id="respnav" className="max-md:w-full absolute z-[11] bg-[#212121] text-[#fff] text-[30px] z-0 right-0 h-screen w-1/4 flex flex-col justify-center px-[25px]"  onClick={()=> {
+                    document.getElementById('respnav').style.display = "none"
+                }}>
                 <button className="absolute right-0 top-0 bg-red-500 hover:bg-red-600 py-[10px] px-[25px]" onClick={()=> {
                     document.getElementById('respnav').style.display = "none"
                 }}>x</button>

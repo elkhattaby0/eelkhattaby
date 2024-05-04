@@ -6,7 +6,8 @@ export const email = "elkhattaby@gmail.com"
 export const experience = "2+ years";
 export const freelance = "Available";
 export const language = "English, Arabic, Franch";
-
+export const myinfo = [`A ${domaine} and I am in the game for over 2+ years. I am proud of my works and ready to face the next challenge`, "That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not only reflects who you are and what you stand for, but words that truly land with those that read them, calling your audience in and making them ."
+]
 export const specialtie = [
     {id:1, title:"Frontend Development", img: 'https://img.icons8.com/ios-filled/50/laptop-coding.png'},
     {id:2, title:"Backend Development", img: 'https://img.icons8.com/fluency/48/code.png'},

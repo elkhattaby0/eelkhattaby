@@ -1,7 +1,9 @@
 import CountUp from 'react-countup';
 import { domaine, name, nationality } from '../Data';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+    const navigate = useNavigate();
     return (
         <section className="flex h-screen w-full flex justify-center">
             <div className="w-3/5 max-sm:w-5/6 max-sm:h-screen max-md:h-screen h-[100%] flex items-center justify-center max-md:w-full" id='sectionOneLeft'>
@@ -15,8 +17,12 @@ const HeroSection = () => {
                     </h1>
                     <p data-aos="fade-right" className="text-2xl max-sm:w-text-xs my-[10px]">{domaine} | Based in {nationality}</p>
                     <label className='max-sm:block '>
-                        <button data-aos="fade-right" className="max-sm:block max-sm:w-full max-sm:mb-2 py-[16px] px-[35px] rounded-[8px] bg-[#212121] text-[#fff] hover:bg-[#ffe9d9] hover:text-[#212121] border-[1px] border-[#212121] font-bold mr-[8px]">Let's Talk</button>
-                        <button data-aos="fade-right" className="max-sm:block max-sm:w-full py-[16px] px-[35px] rounded-[8px] bg-[#ffe9d9] text-[#212121] hover:bg-[#212121] hover:text-[#fff] border-[1px] border-[#212121] font-bold">My Work</button>
+                        <button data-aos="fade-right" className="max-sm:block max-sm:w-full max-sm:mb-2 py-[16px] px-[35px] rounded-[8px] bg-[#212121] text-[#fff] hover:bg-[#ffe9d9] hover:text-[#212121] border-[1px] border-[#212121] font-bold mr-[8px]" onClick={()=> {
+                            navigate('/contact')
+                        }}>Let's Talk</button>
+                        <button data-aos="fade-right" className="max-sm:block max-sm:w-full py-[16px] px-[35px] rounded-[8px] bg-[#ffe9d9] text-[#212121] hover:bg-[#212121] hover:text-[#fff] border-[1px] border-[#212121] font-bold" onClick={()=> {
+                            navigate('/project')
+                        }}>My Work</button>
                     </label>
                     <p data-aos="fade-right" className="text-2xl max-sm:w-text-[6px] flex items-center my-[10px]">
                         <span><b>{<CountUp end={1200} duration={12}/>}+</b> Worldwide client</span>

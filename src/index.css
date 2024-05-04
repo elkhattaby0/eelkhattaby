@@ -15,6 +15,10 @@
     background-color: #212121;
     color: #fff;
 }
+.text-stroke-2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #212121;
+}
 
 /* Breakpoint prefix	Minimum width	CSS
 sm	640px	@media (min-width: 640px) { ... }

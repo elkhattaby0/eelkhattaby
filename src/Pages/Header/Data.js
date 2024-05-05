@@ -1,3 +1,4 @@
+export const version = "0.1";
 export const domaine = "Full-Stack Developer";
 export const name = "Lahoucine Elkhattaby";
 export const nationality = "Morocco";
@@ -53,4 +54,13 @@ export const AwardsD = [
     {id: 2, 'img': 'https://www.hiveart.xyz/perez/assets/images/awards/webby.png', 'year': '2018', 'position': 'Winner', 'name': '01X Developer Award'},
     {id: 3, 'img': 'https://www.hiveart.xyz/perez/assets/images/awards/fwa.png', 'year': '2019', 'position': 'Winner', 'name': '01X Developer Award'},
     {id: 4, 'img': 'https://www.hiveart.xyz/perez/assets/images/awards/wordpress.png', 'year': '2020', 'position': 'Winner', 'name': '01X Developer Award'},
+]
+export const RecentWork = [
+    {id: 1, img: require('../Images/content/project1.png'), content: "Oxilex Dashboard Design", width: 'w-[41.5%]'},
+    {id: 2, img: require('../Images/content/project6.png'), content: "Oxilex Dashboard Design", width: 'w-[58.5%]'},
+    {id: 3, img: require('../Images/content/project3.png'), content: "Oxilex Dashboard", width: 'w-1/3'},
+    {id: 4, img: require('../Images/content/project4.png'), content: "Oxilex Dashboard", width: 'w-1/3'},
+    {id: 5, img: require('../Images/content/project5.png'), content: "Oxilex Apps", width: 'w-1/3'},
+    {id: 6, img: require('../Images/content/project6.png'), content: "Oxilex Dashboard Design", width: 'w-[58.5%]'},
+    {id: 7, img: require('../Images/content/project7.png'), content: "Oxilex Dashboard", width: 'w-[41.5%]'},
 ]

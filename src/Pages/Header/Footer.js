@@ -1,4 +1,4 @@
-import { email, name, nationality, phone } from "./Data";
+import { email, name, nationality, phone, version } from "./Data";
 
 const Footer = () => {
     return (
@@ -39,12 +39,12 @@ const Footer = () => {
                     </div>
                 </span>
                 <span className="w-full max-lg:hidden">
-                    <p className="font-bold text-[#f5f5f5] text-[91px]   max-lg:text-center max-lg:h-1/3 border- break-words	">{name.toLocaleUpperCase()}</p>
+                    <p className="font-bold text-[#f5f5f5] text-[91px]   max-lg:text-center max-lg:h-1/3 border- break-words	">{name.toLocaleUpperCase()} </p>
                 </span>
                 <span className="w-full text-[#f5f5f5] max-lg:flex max-lg:felx-col max-lg:h-1/3">
                     <hr className="h-[1px] max-lg:hidden"/>
                     <span className="flex justify-between font-semibold items-center border- mt-[10px] max-lg:flex-col max-lg:w-full">
-                        <p>©2024 {name}, All Rights Reserved</p>
+                        <p>©2024 {name}  v-{version}, All Rights Reserved</p>
                         <button className="flex items-center hover:text-[#ffb646]" onClick={()=> {
                             window.scrollTo({
                                 top: 0,
